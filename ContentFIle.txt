@@ -1,0 +1,172 @@
+#216bd6de possible hex code for button colors
+
+
+
+
+
+THE ANNUAL MARKETING CONFERENCE
+
+1-3 September, Downtown Conference Center, New York
+
+About the Event
+
+Brace yourselves for the annual marketing conference. The theme for this year's event is "Marketing: The Business Perspective". Business Executives, Marketing Experts from around the world will share thier perspective about how marketing has helped them grow their business. Confirm your seats right now.
+
+Event Speakers TOP 6
+
+Hubert Bradley, Chairman, The Bradley Group  DD
+Samantha Patterson CEO, Glow Cosmetics DD
+Nathan Black, CMO, CartIt   DD
+Lee Jun Sung, Marketing Executive, Garter Industries DD
+Julian Lang, COO, Dropdown DD
+Roger Shapiro, Marketing Manager, Integral Studios DD
+Akash Bansal CEO, Unilens DD
+Ulyss Grant CEO, The Event
+Natasha Johnson, CMO, Toniq DD
+Hiroshi matsudyra, CEO, Hiroshi Motors DD
+Sara Malick, Freelance Digital Marketer DD
+Tony Anderson, CEO, Anderson Insurance DD
+
+Vision on event speakers section
+
+My vision is that I want photos of speakers along with thier designation
+in a 3x4 grid
+
+Event Schedule
+
+Day 1:
+
+9:30 am ==> Robert Blaine, Founder, OmegaAI, Keynote, Role of AI in transforming Marketing d 
+11:30 am==> Nathan Alderson, Senior VP, Tuber Inc, Maximizing ROI with Digital Advertising d
+1:00 pm ==> Lunch time
+2:00 pm ==> Sarah Malick, CEO, Unilens, Harnessing Consumer Insights to Drive Business Growth d
+3:30 pm ==> Katrina Albanese, Product Manager, Emerson Corp, Reframing the Risk of Responsible Marketing d 
+
+Day 2:
+
+10:00 am==> Samantha Patterson, CEO, Glow Cosmetics, How Rewards Programs Drive New Business and Customer Loyalty d
+11:30 am==> Julian Lang, CMO, Dropdown Inc, Harnessing AI and Data for B2B Success d
+1:00 pm ==> Lunch time
+2:00 pm ==> Brent Jones, Social Media Expert, The sustainable marketplace platforms of tomorrow d
+3:30 pm ==> Elena Rodriguez, VP Sales & Marketing, HighGrow LLC, Leveraging Digital Marketing for Sales Growth d
+
+Day 3:
+
+10:00 am==> Ashley Fairfield, COO, ChinUP LLC, Aligning Sales and Success for Impact d
+11:30 am==> Tony Anderson, SEO Expert, Leveling Up SEO with AI d
+1:00 pm ==> Lunch time
+2:00 pm ==> Natasha Johnson, Content Creator, Creator Economy 101 d 
+3:30 pm ==> Marie Kennedy, President Advertising, Integral Studios Revolutionize Out-Of-Home Advertising d
+
+Vision on Event Schedule
+
+I want a 3 button types for day 1,2,3
+
+--So when a user clicks at day 1 he should see the Schedule of day 1 only and not the other days. The same goes for other days as well.
+--coming to detailed schedule I only want the name of the speaker, designation and the topic on which they are going to speak.
+
+FAQ
+
+What is the costing of the tickets?
+We have 3 plans Standard Access, Professional Access, Premium Access
+
+Does ticket plan include Lunch?
+Yes, it also includes Lunch
+
+How many seats are there for this event?
+We only have 300 seats, so please hurry & book your spot right now.
+
+What are the timings of the event?
+Event starts from 9:00 AM to 4:30 Premium
+
+Do we have access to public transport?
+Yes, Event location is at Downtown New York, where you can easily get access to taxis and subways
+
+Do we have hotels nearby in nearby location?
+Yes, there are hotels in the vicinity, nearest hotel is a 3 min walk from the location
+
+Ticket plans
+
+Standard 
+Regular Seating
+Coffee Break
+Custom Badge
+
+Professional
+Regular Seating
+Coffee Break
+Custom Badge
+Community Access
+
+Premium 
+Regular Seating
+Coffee Break
+Custom Badge
+Community Access
+Workshop Access
+After Party
+
+
+Address
+A108 Adam Street, NY 535022, USA
+
+email
+info@theevent.com
+
+phone
++1 (889) 8375 878
+
+
+
+Vision for the entire project:
+-- Build a smooth, interactive, responsive and userfriendly website for the event
+-- 
+
+
+
+            <div class="scheduleColumn" id="day3">
+                <div class="scheduleRow">
+                    <div class="time">10:00 am</div>
+                    <div class="description">Hiroshi matsudyra, Youtuber, Utilising Youtube and other platforms to promote products and services</div>
+                </div>
+                <div class="scheduleRow">
+                    <div class="time">11:30 am</div>
+                    <div class="description">Tony Anderson, SEO Expert, Corelation between SEO and content on social media</div>
+                </div>
+                <div class="scheduleRow">
+                    <div class="time">1:00 pm</div>
+                    <div class="description">Lunch time</div>
+                </div>
+                <div class="scheduleRow">
+                    <div class="time">2:00 pm</div>
+                    <div class="description">Natasha Johnson, Content Creator, Rise of Content Creators and Influencer Marketing</div>
+                </div>
+                <div class="scheduleRow">
+                    <div class="time">3:30 pm</div>
+                    <div class="description">Ulyss Grant CEO, The Event His opinion and closing remarks, note of Thanks to all Speakers and Participants</div>
+                </div>
+            </div>
+
+
+        <div class="scheduleColumn" id="day2">
+                <div class="scheduleRow">
+                    <div class="time">10:00 am</div>
+                    <div class="description">Samantha Patterson, CEO, Glow Cosmetics, Case Study of Glow Cosmetics utilising digital marketing to promote and grow one of their newly launched product lineup</div>
+                </div>
+                <div class="scheduleRow">
+                    <div class="time">11:30 am</div>
+                    <div class="description">Julian Lang, COO, Dropdown, Highlighting the role of Artificial Intelligence Solutions in Marketing</div>
+                </div>
+                <div class="scheduleRow">
+                    <div class="time">1:00 pm</div>
+                    <div class="description">Lunch time</div>
+                </div>
+                <div class="scheduleRow">
+                    <div class="time">2:00 pm</div>
+                    <div class="description">Lee Jun Sung, Social Media Expert, Role of Hashtags in marketing</div>
+                </div>
+                <div class="scheduleRow">
+                    <div class="time">3:30 pm</div>
+                    <div class="description">Roger Shapiro, Lead Content Strategist, Integral Studios, Significance of creating user-friendly content</div>
+                </div>
+            </div>
