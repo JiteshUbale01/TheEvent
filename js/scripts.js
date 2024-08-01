@@ -74,19 +74,19 @@ document.getElementById("contactus").addEventListener("submit",(event)=>{
 //contact form end
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    var menuIcon = document.getElementById('menu-icon');
-    var navList = document.getElementById('navList');
+// document.addEventListener('DOMContentLoaded', function () {
+//     var menuIcon = document.getElementById('menu-icon');
+//     var navList = document.getElementById('navList');
 
-    if(menuIcon.style.display==="none"){
-        menuIcon.addEventListener('click', function () {
-            navList.style.display="block";
-        });    
-    }
-    else{
+//     if(menuIcon.style.display==="none"){
+//         menuIcon.addEventListener('click', function () {
+//             navList.style.display="block";
+//         });    
+//     }
+//     else{
         
-    }
-    navList.addEventListener('click', function () {
-        navList.style.display="none";
-    });
-});
+//     }
+//     navList.addEventListener('click', function () {
+//         navList.style.display="none";
+//     });
+// });

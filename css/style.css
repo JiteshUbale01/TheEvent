@@ -707,16 +707,24 @@ html{
     }
 
     section#sponsor .container{
-        padding: 0 2rem;
+        height: 230px;
         display: grid;
-        gap: 2rem;
+        gap: 10px;
         grid-template-columns: repeat(4,1fr);
-        width: 80%;
+        grid-template-rows: repeat(2, auto);
+        
+    }
+
+    section#sponsor .container .block{
+        display: contents;
+        margin-bottom: 20px;
     }
 
     section#sponsor .container img{
         width: 100%;
-        height: 50px;
+        height:auto;
+        padding-right: 10px;
+        
     }
     /* sponsor section end  */
 
@@ -1029,6 +1037,15 @@ html{
 
     /*footer start */
 
+    footer{
+        height: 100vh;
+    }
+
+    footer .container{
+        flex-direction: column;
+        height: 100%;
+    }
+
     /*footer end*/
 }
 
@@ -1040,14 +1057,32 @@ html{
     /*header end*/
 
     /*hero section start*/
+
+    section#hero{
+        height: 320px;
+    }
+
+    section#hero .heroImage{
+        height: 100%;
+    }
+
+    section#hero .heroImage img{
+        height: 100%;
+    }
+
+    section#hero .heroContent{
+        left: 10%;
+    }
+
     section#hero .heroContent h1.headings{
-        font-size: 1.75rem;
+        font-size: 1.25rem;
         margin-bottom: 0.5rem;
     }
 
     section#hero .heroContent h3{
-        font-size: 1.25rem;
+        font-size: 1rem;
         margin-top: 0.5rem;
+        text-align: center;
     }
 
     section#hero .heroContent #aboutMarker{
@@ -1067,22 +1102,32 @@ html{
     /*about section start*/
     
     section#about{
-        height: 70vh;
+        height: 45vh;
     }
 
     section#about .container {
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px 20px;
+        padding: 10px 12px;
     }
 
     section#about .eventInfo {
-        width: 80%;
+        width: 90%;
         padding: 0;
     }
 
     section#about .eventDate{
         padding: 0;
+    }
+
+    section#about .aboutHeaders {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    section#about .container p{
+        font-size: 14px;
+        line-height: 1.5;
     }
 
     /*about section end*/
@@ -1151,6 +1196,10 @@ html{
     /*sponsor start*/
     section#sponsor .container{
         grid-template-columns: repeat(1,1fr);
+    }
+
+    section#sponsor .container img {
+        margin-bottom: 2rem;
     }
 
     /*sponsor end*/
