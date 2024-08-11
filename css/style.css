@@ -1,0 +1,1289 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+        --purplebg:#781dd9eb;
+    --redbg:#f3141aed;
+    --graybg: rgba(13, 20, 41, 0.8);
+    --bluebg: #0e1b4d;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+@media only screen and (max-width:1640px) {
+    
+    /*header start*/
+    header{
+        z-index: 2;
+        width: 100%;
+        padding: 10px 0; 
+        position: fixed;
+        top: 0;
+        left: 0;   
+        background: rgba(3,0,38,255);
+ 
+    }
+
+    #menu-icon {
+        display: none; 
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #f6f7fd;
+    }
+
+    header .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header .logo img{
+        max-height: 40px;
+    }
+
+    header #navbar{
+        display: flex;
+        gap: 13px;
+    }
+
+    header #navbar ul{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around;
+    }
+
+    header #navbar ul li{
+        margin: 0 0.75rem;
+        font-size: 1rem;
+    }
+
+    header #navbar ul li>a.default{
+        color: white;
+        border-bottom: 2px solid #60e1df;
+    }
+
+    header #navbar ul li a{
+        text-decoration: none;
+        color: rgba(202, 206, 221, 0.8);
+        padding-bottom: 0.75rem;
+    }
+
+    header #navbar ul li a:hover{
+        border-bottom: 2px solid #60e1df;
+        transition:  all 0.2s ease-in-out ;
+        color: white;
+    }
+
+    header .end{
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        
+    }
+
+    header  #buyTickets{
+        background-color: #605edf;
+        color: white;
+        border: none;
+        font-size: 0.95rem;
+        padding: 4px 22px;
+        border-radius: 20px;
+        border:3px solid #605edf;
+        text-decoration: none;
+    }
+
+    header #buyTickets:hover{  
+        cursor: pointer;
+        background-color: rgba(3,0,38,255);
+        
+    }
+
+    /*header end*/
+
+    /* hero section start  */
+    section#hero{
+        width: 100%;
+        background: rgba(3,0,38,255);
+        background-size: cover;
+        position: relative;
+    }
+
+    section#hero .container{
+        height: 100%;
+    }
+
+    section#hero .heroImage{
+        opacity: 70%;
+    }
+
+    section#hero .heroImage img{
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+    }
+
+    section#hero .heroContent{
+        position: absolute;
+        top: 30%;
+        left:23%;
+        color: white;      
+    }
+
+    section#hero .heroContent .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#hero .heroContent h1.headings{
+        margin-bottom: 1rem;
+        font-size: 3.7rem;
+    }
+
+    section#hero .heroContent h1.headings #marketing{
+        color: #216bd6de;
+    }
+
+    section#hero .heroContent #aboutMarker{
+        border: 2px solid #605edf;
+        width: fit-content;
+        margin-top: 1.75rem;
+        padding: 9px 26px;
+        border-radius: 1.5rem;
+    }
+
+
+    section#hero .heroContent #aboutMarker{
+        background-color: #605edf;
+        border: none;
+    }
+
+    section#hero .heroContent #aboutMarker a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+    /* hero section end  */
+
+    /* about section start  */
+    section#about{
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        background-color: rgba(3,0,38,255);
+        height: 275px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    section#about .container{
+        background-color: rgba(3,0,38,255);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        /* padding-top: 25px; */
+    }
+
+    section#about .eventInfo{
+        width: 30%;
+        padding-left: 1.9rem;
+    }
+
+    section#about .eventDate{
+        padding-right: 2.25rem;
+    }
+
+    section#about .aboutHeaders{
+        margin-bottom: 1.45rem;
+    }
+    /* about section end  */
+
+    /* speakers section  start*/
+
+    section#speakers{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 1.75rem 0;
+        width: 100%;
+    }
+
+    section#speakers>.speakerHead{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    section#speakers>.speakerHead h2{
+        font-size: 2.3rem;
+        color: rgba(6, 12, 34, 0.98);
+    }
+
+    section#speakers>.speakerHead p{
+        font-size: 18px;
+        color: #9195a2;
+        margin-bottom: 10px;
+    }
+
+    section#speakers>.container{
+        margin-top: 2rem;
+    }
+
+    section#speakers .line{
+        border-bottom: 4.7px solid #605edf;
+        width: 3.75em;
+    }
+
+    section#speakers .speakerSection{
+        margin: 1.75rem 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+        padding: 20px;
+    }
+
+    section#speakers .speakerSection .speakerTab{
+        width: 360px;
+        height: 270px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        margin-bottom: 18px;
+    }
+
+    section#speakers .speakerSection .speakerTab img{
+        width: 100%;
+        height: 87%;
+    }
+
+    section#speakers .speakerSection .speakerTab img:hover{
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    section#speakers .speakerSection .speakerTab .desc{
+        width: 100%;
+        padding-top: 7px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
+        background-color: rgba(6, 12, 34, 0.98);
+        color: rgba(202, 206, 221, 0.8);
+        font-size: 1.125rem;
+        padding: 0.5rem 0;
+    }
+
+    section#speakers .speakerSection .speakerTab .desc:hover{
+        color: white;
+        transition: 0.2s;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    section#speakers .speakerSection .speakerTab .desc h4{
+        font-size: 1.15em;
+    }
+    section#speakers .speakerSection .speakerTab .desc p{
+        border:none;
+        font-size: 0.8rem;
+    }
+    /* speaker section end  */
+
+    /* venue section  start*/
+
+    section#venue{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 3rem 0;
+        flex-direction: column;
+        gap: 1.75rem;
+    }
+
+    section#venue>.venueHead{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 1rem;
+    }
+
+    section#venue>.venueHead h2{
+        font-size: 2.3rem;
+        color: rgba(6, 12, 34, 0.98);
+    }
+
+    section#venue>.venueHead p{
+        font-size: 18px;
+        color: #9195a2;
+    }
+
+    section#venue>.venueHead>.line{
+        border-bottom: 4.7px solid #605edf;
+        width: 3.75em;
+        margin-top: 10px;
+    }
+
+    section#venue .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    section#venue .map{
+        margin-left: 3.5rem;
+    }
+
+    section#venue .venueAddress{
+        width: 50%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2.87rem;
+        padding: 0 4.75rem;
+    }
+
+    section#venue .venueAddress>p{
+        border: none;
+        line-height: 1.25;
+        color: #9195a2;
+    }
+    /* venue section end  */
+
+    /* gallery section start */
+    section#gallery{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #f6f7fd;
+    }
+
+    section#gallery .galleryHead{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 7px;
+        margin: 2em 0;
+    }
+
+    section#gallery .galleryHead h2{
+        color: rgba(6, 12, 34, 0.98);
+        font-size: 2.3rem;
+    }
+
+    section#gallery .galleryHead p{
+        color: #9195a2;
+        font-size: 18px;
+    }
+
+    section#gallery .galleryHead>.line{
+        border-bottom: 4.7px solid #605edf;
+        width: 3.75em;
+        margin-top: 10px;
+    }
+
+
+    section#gallery .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+
+    section#gallery .container .slides{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+        gap: 1rem;
+    }
+
+    section#gallery .container .slides .slideItem{
+        width: 300px;
+        height: 230px;
+    }
+
+    section#gallery .container .slides .slideItem img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* gallery section end  */
+
+    /* ticket plans section  */
+
+    section#ticketPlans{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2.75rem 0;
+        background-color: #f6f7fd;
+    }
+
+    section#ticketPlans .container{
+        display: flex;
+        justify-content: space-around;  
+        align-items: center;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    section#ticketPlans .plans{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        margin: 18px 0;
+    }
+
+    section#ticketPlans .plans .planInfo{
+        width: 345px;
+        height: 400px;
+        background: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    section#ticketPlans .plans .planInfo button{
+        background-color: #605edf;
+        color: white;
+        font-size: 1.25rem;
+        padding: 0.5rem;
+        border-radius: 25px;
+        border: none;
+        width: 210px;
+    }
+
+    section#ticketPlans .plans .planInfo button:hover{
+        background-color: #4f4ceb;
+        cursor: pointer;
+    }
+
+    section#ticketPlans .plans .planInfo .planHead{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    section#ticketPlans .plans .planInfo .planHead h4{
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        color: rgba(13, 20, 41, 0.8);
+    }
+
+    section#ticketPlans .plans .planInfo .planHead strong{
+        font-size: 3.25rem;
+        color: rgba(6, 12, 34, 0.98);
+    }
+
+    section#ticketPlans .plans .planInfo .planFeatures ul{
+        /* list-style: none; */
+        font-size: 1.25rem;
+    }
+
+    section#ticketPlans .plans .planInfo .planFeatures ul>.standard,.pro{
+        opacity: 60%;
+    }
+
+    section#ticketPlans .plans .planInfo .planFeatures ul li{
+        margin-bottom: 10px;
+    }
+
+    section#ticketPlans .container .ticketPlanHead{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section#ticketPlans .container .ticketPlanHead h2{
+        font-size: 2.3rem;
+        margin: 1rem 0;
+        text-transform: uppercase;
+    }
+
+    section#ticketPlans .container .ticketPlanHead p{
+        font-size: 18px;
+        margin-bottom: 0.25rem;
+        color: #9195a2;
+    }
+
+    section#ticketPlans .container .ticketPlanHead .line{
+        border-bottom: 4.7px solid #605edf;
+        width: 3.75em;
+        margin: 1.25rem 0;
+        margin-top: 10px;
+    }
+    /* ticketplan section end  */
+
+    /* Schedule section styling */
+    section#schedule{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        background-color: #f6f7fd;
+    }
+
+    section#schedule .scheduleHeadings h2{
+        font-size: 2.3rem;
+        color: #0e1b4d;
+    }
+
+    section#schedule .scheduleHeadings p{
+        font-size: 18px;
+        color: #f3f3f3;
+    }
+
+    section#schedule .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        width: 70%;
+    }
+
+    section#schedule .scheduleContent{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1em;
+    }
+
+    section#schedule .schedulePrompts{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        font-size: 2rem;
+        margin-top: 1.15rem;
+    }
+
+    section#schedule .schedulePrompts .single-tabs{
+        padding: 0.5rem 0.5rem;
+        width: 12em;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        background-color: rgba(6, 12, 34, 0.98);
+        border-radius: 1.25rem;
+    }
+
+    section#schedule .schedulePrompts .single-tabs{
+        cursor: pointer;
+        transition:all 0.3s ease-in-out;
+    }
+
+    section#schedule .schedulePrompts .single-tabs.active{
+        background-color: #4f4ceb;
+    }
+
+    section#schedule .scheduleHeadings{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    section#schedule .scheduleHeadings .line{
+        border-bottom: 4.7px solid #605edf;
+        width: 3.75em;
+        margin-top: 0.26rem;
+    }
+
+    section#schedule .scheduleContent .scheduleRow{
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding: 1rem 0.5rem;
+        border-bottom: 2px solid #9195a2;
+        background: #f3f3f3;
+        line-height: 1.5;
+    }
+    
+    section#schedule .scheduleContent .scheduleRow .circle{
+        border: 5px solid #60e1df;
+        border-radius: 15px;
+        width: 25px;
+        height: 25px;
+    }
+
+    section#schedule .scheduleContent .scheduleColumn.active{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1.8rem;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    section#schedule .scheduleContent .scheduleColumn{
+        display: none;
+    }
+
+    section#schedule .scheduleContent .time{
+        width: fit-content;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #152b79;
+    }
+
+    section#schedule .scheduleContent .description{
+        width: 80%;
+        font-size: 1.1257rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    section#schedule .scheduleContent .description p{
+        color: #152b79;
+        line-height: 1.5;
+        word-spacing: 2px;
+    }
+
+    section#schedule .scheduleContent .description strong{
+        color: #152b79;
+    }
+    /* schedule section end  */
+
+    /* sponsor section start  */
+    section#sponsor{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 2.5rem;
+    }
+
+    section#sponsor .sponsorHead{
+        color: rgba(6, 12, 34, 0.98);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    section#sponsor .sponsorHead .line{
+        border-bottom: 4.7px solid #605edf;
+        width: 3.75em;
+        margin-top: 1rem;
+    }
+
+    section#sponsor .sponsorHead>h2{
+        font-size: 2.3rem;
+    }
+
+    section#sponsor .container{
+        height: 230px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2, auto);
+        
+    }
+
+    section#sponsor .container .block{
+        display: contents;
+        margin-bottom: 20px;
+    }
+
+    section#sponsor .container img{
+        width: 100%;
+        height:auto;
+        padding-right: 10px;
+        
+    }
+    /* sponsor section end  */
+
+    /* contact us section start  */
+    section#contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+
+    section#contact .head{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section#contact .head h2{
+        margin-bottom: 15px;
+        color: rgba(6, 12, 34, 0.98);
+        font-size: 2.3rem;
+    }
+
+    section#contact .head p{
+        color: #9195a2;
+        font-size: 18px;
+    }
+
+    section#contact .head .line{
+        border-bottom: 4.7px solid #605edf;
+        width: 3.75em;
+        margin-top: 1rem;
+    }
+
+    section#contact .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+
+    section#contact .container .contactInfo{
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        
+    }
+
+    section#contact .container>#contactus{
+        width: 33.33333%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    section#contact .container>#contactus .row1, .row2, .row3{
+        /* background-color: rebeccapurple; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    section#contact .container>#contactus .row2{
+        width: 100%;
+    }
+
+    section#contact .container>#contactus .row1>input{
+        line-height: 1.5;
+        padding: 5px;
+        /* padding-right: 4.5rem; */
+        /* margin-right: 1rem; */
+        width: 75%;
+        border: 1px solid rgb(45, 44, 44);
+        border-radius: 0.25rem;
+    }
+
+    section#contact .container>#contactus .row2>input{
+        width: 100%;
+        line-height: 1.5;
+        padding: 5px;
+        padding-right: 1.5rem;
+        border: 1px solid rgb(45, 44, 44);
+        border-radius: 0.25rem;
+    }
+
+    section#contact .container>#contactus textarea{
+        width: 100%;
+        height: 120px;
+        line-height: 1.5;
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+    }
+
+    section#contact .container>#contactus #submit{
+        line-height: 1.5;
+        color: white;
+        padding: 0.5rem 1.5rem;
+        border: none;
+        border-radius: 1.25rem;
+        font-size: 1.25rem;
+        background-color: #4f4ceb;
+    }
+    /* contact us section end  */
+
+    /* footer start  */
+    footer{
+        height: 280px;
+    }
+
+    footer .container{
+        background-color: rgba(3,0,38,255);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        height: 100%;
+        color: white;
+    }
+
+    footer .container>.desc{
+        max-width: 20%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.10rem;
+        margin-left: 7rem;
+    }
+
+    footer .container>.desc>img{
+        max-height: 40px;
+        max-width: 180px;
+    }
+
+    footer .container>.desc>p{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    footer .container .links{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: 80%;
+        justify-content: center;
+    }
+
+    footer .container h3{
+        font-size: 1.25rem;
+        margin-top: 13px;
+    }
+
+    
+
+    footer .container .links ul li{
+        list-style: none;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    footer .container .newsLetter{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.15rem;
+        height: 80%;
+        margin-right: 7.75rem;
+    }
+
+    footer .container .newsLetter #newsletter{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer .container .newsLetter #newsletter #email1{
+        padding: 2px;
+        border-radius: 16px 0 0 16px;
+        line-height: 1.75;
+        width: 220px;
+        font-size: 18px;
+        border: none;
+    }
+
+    footer .container .newsLetter #newsletter #subscribe{
+        padding: 2px 4px;
+        color: #f3f3f3;
+        background-color: #4f4ceb;
+        line-height: 1.5;
+        border-radius:0 16px 16px 0;
+        font-size: 18px;
+        border: none;
+    }
+
+    footer .container .newsLetter #newsletter #subscribe:hover{
+        cursor: pointer;
+        background-color: #0f1928e0;
+        border: 2px solid #60e1df;
+    }
+
+    /* footer end  */
+}
+
+
+@media screen and (max-width:960px) {
+    
+    header {
+        width: 100vw;
+    }
+
+    header .container{
+        width: 100%;
+    }
+
+    #menu-icon{
+        display: block;
+    }
+    
+    header .container #navbar #navList{
+        display: none;
+        
+    }
+
+    /**header end*/
+
+    /** hero section start*/
+    section#hero .heroContent{
+        left: 10%;
+    }
+
+    /** hero section end*/
+
+    /* hero section end*/
+
+    /*about section start */
+
+    /* about section end*/
+
+    /*speaker section start*/
+
+    section#speakers .speakerSection{
+        grid-template-columns: repeat(2,1fr);  
+    }
+    /* speaker section end*/
+
+    /*schedule section start*/
+
+    section#schedule .container{
+        width: 90%;
+    }
+
+    section#schedule .schedulePrompts{
+        width: 90%;
+    }
+
+    section#schedule .schedulePrompts .single-tabs{
+        font-size: 1rem;
+    }
+
+    section#schedule .scheduleContent {
+        width: 100%;
+    }
+
+    section#schedule .scheduleContent .scheduleRow .circle{
+        display: none;
+    }
+    
+    /*schedule section end*/
+
+    /*venue section start*/
+    section#venue .container{
+        flex-direction: column;
+        width: 80vw;
+        gap: 4rem;
+    }
+
+    section#venue .venueAddress{
+        width: 100%;
+    }
+
+    /*venue section end*/
+
+    /*gallery section start*/
+    section#gallery .container .slides{
+        grid-template-columns: repeat(2,1fr);
+    }
+    /*gallery section end*/
+
+    /*sponsor start*/
+
+    section#sponsor .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /*sponsor end*/
+
+    /*plan start*/
+
+    /*plan end*/
+
+    /*contact us start */
+
+    /*contact us end*/
+
+    /*footer start */
+
+    footer{
+        height: 100vh;
+    }
+
+    footer .container{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /*footer end*/
+}
+
+
+@media screen  and (max-width:576px){
+ 
+    /*header start*/
+
+    /*header end*/
+
+    /*hero section start*/
+
+    section#hero{
+        height: 320px;
+    }
+
+    section#hero .heroImage{
+        height: 100%;
+    }
+
+    section#hero .heroImage img{
+        height: 100%;
+    }
+
+    section#hero .heroContent{
+        left: 10%;
+    }
+
+    section#hero .heroContent h1.headings{
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    section#hero .heroContent h3{
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+
+    section#hero .heroContent #aboutMarker{
+        margin-top: 1rem;
+    }
+
+    section#hero .heroContent #aboutMarker a {
+        font-size: 18px;
+    }
+
+    section#hero .heroContent .container{
+        padding-bottom: 2rem;
+    }
+
+    /*hero section end*/
+
+    /*about section start*/
+    
+    section#about{
+        height: 45vh;
+    }
+
+    section#about .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 12px;
+    }
+
+    section#about .eventInfo {
+        width: 90%;
+        padding: 0;
+    }
+
+    section#about .eventDate{
+        padding: 0;
+    }
+
+    section#about .aboutHeaders {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    section#about .container p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /*about section end*/
+
+    /*speaker section start*/
+
+    section#speakers .speakerSection{
+        grid-template-columns: 1fr;  
+    }
+
+    /* speaker section end*/
+    
+    /*schedule start*/
+
+    /*schedule end*/
+
+    /*venue start*/
+
+    section#venue{
+        margin: 1.3rem 0;
+        gap: 1.25rem;
+    }
+
+    section#venue .map{
+        margin: 0;
+        width: 90%;
+    }
+
+    section#venue .container {
+        width: 90vw;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    section#venue .map iframe{
+        max-width: 320px;
+    }
+    section#venue>.venueHead h2{
+        font-size: 1.75rem;
+    }
+
+    section#venue>.venueHead p{
+        font-size: 15px;
+    }
+
+    section#venue .venueAddress {
+        padding: 0 1.5rem;
+        margin: 0 1.5rem;
+        gap: 1.75rem;
+        height: 250px;
+    }
+    /*venue end*/
+
+    /*gallery section start*/
+    section#gallery .container .slides{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section#gallery .container .slides .slideItem {
+        width: 100%;
+    }
+
+
+    /*gallery section end*/
+
+    /*sponsor start*/
+    section#sponsor .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    section#sponsor .container img {
+        margin-bottom: 2rem;
+    }
+
+    /*sponsor end*/
+
+    /*plan section start*/
+    section#ticketPlans .plans{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    /*plan section end*/
+
+    /*contact us start*/
+
+    section#contact{
+        margin-bottom: 2rem;
+    }
+
+    section#contact .container{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    section#contact .head p {
+        text-align: center;
+    }
+
+    section#contact .container .contactInfo {
+        width: 70%;
+    }
+
+    section#contact .container>#contactus{
+        width: 80%;
+    }
+    /*contact us end*/
+
+    /*footer start*/
+    footer{
+        height: 100vh;
+        
+    }
+
+    footer .container{
+        flex-direction: column;
+        height: 100%;
+        gap: 10px;
+        align-items: flex-start;
+        padding-top: 2rem;
+        background-color: rgba(3,0,38,255);
+    }
+
+    footer .container>.desc>p {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    footer .container>.desc{
+        max-width: 80%;
+        margin: 0;
+        margin-top: 3.75rem;
+        padding-left: 18px;
+        background-color: rgba(3,0,38,255);
+    }
+
+    footer .container .links{
+        width: 60%;
+        align-items: start;
+        padding-left: 18px;
+    }
+
+    footer .container .newsLetter{
+        width: 100%;
+        margin: 0;
+        gap: 20px;
+        background-color: rgba(3,0,38,255);
+        padding:0 18px;
+    }
+
+    footer .container .newsLetter h3{
+        font-size: 1.5rem;
+    }
+
+    footer .container .newsLetter #newsletter #email1{
+        width: 85%;
+    }
+    /*footer end*/
+}
